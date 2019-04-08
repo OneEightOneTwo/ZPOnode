@@ -14,12 +14,13 @@ const {
 }=req.body;
 // console.log(name);
 
-//加密
-let tokenName= createtoken(name);
+
+
 
 //判断用户名和密码
 if(fn=='np'){
-
+//加密
+let tokenName= createtoken(name);
   (async () => {
 
   let data = await db.find('login', {
@@ -31,10 +32,10 @@ res.send(data[0]);
 })();
 
 }
-
  //判断用户名是否存在
 if(fn=='name'){
-  
+  //加密
+let tokenName= createtoken(name);
   (async () => {
      
       let data = await db.find('login', {
@@ -49,7 +50,8 @@ if(fn=='name'){
 
  //注册成功添加到数据库
  if(fn=='inset'){
-  
+  //加密
+let tokenName= createtoken(name);
   (async () => {
  
       let data = await db.insert('login', [{
@@ -63,6 +65,43 @@ if(fn=='name'){
   // console.log(data.ops[0])
   })();
 }
+//查询整个表
+if(fn=='all'){
+  (async () => {
+      let data = await db.find('login', {});
+  res.send(data);
+  // console.log(data);
+  })();
+}
+
+ //删除
+ if(fn=='del'){
+  (async () => {
+      let data = await db.del('login', {
+        name
+      });
+  
+  // console.log(data);
+  })();
+}
+
+//添加管理员
+if(fn=='inss'){
+  let tokenName= createtoken(name);
+  (async () => {
+    let data = await db.insert('login', [{
+      name:tokenName,
+      psw,
+      gid:'2'
+      
+  }]);
+ 
+res.send(data.ops[0]);
+  // console.log(data);
+  })();
+}
+
 });
+
 
 module.exports = router;

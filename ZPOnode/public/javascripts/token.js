@@ -5,7 +5,6 @@ console.log(buf.toString('base64'))
 return buf.toString('base64');
 }
 
-
 //解密
 let token=(token)=>{
     const buf=Buffer.from(token,'base64');

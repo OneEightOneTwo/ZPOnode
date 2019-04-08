@@ -5,7 +5,7 @@ const {
 // Connection URL
 const url = 'mongodb://localhost:27017';
 // Database Name 数据名
-const dbName = 'user';
+const dbName = 'ZPOnode';
 // Use connect method to connect to the server
 
 let connect = () => {

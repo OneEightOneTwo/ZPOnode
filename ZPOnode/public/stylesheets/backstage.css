@@ -1,0 +1,21 @@
+#body a:hover{
+    color: red;
+}
+.layui-input-inline{
+    width: 426px;
+}
+.layui-body .line{
+    width: 426px;
+}
+.layui-body .bttn{
+    background: #82ede8;
+    border-radius: 5px;
+    width: 44px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.layui-body .title{
+    margin-bottom: 48px;
+}
