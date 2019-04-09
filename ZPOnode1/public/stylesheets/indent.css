@@ -1,0 +1,18 @@
+.btnn{
+    width: 50px;
+    text-align: center;
+}
+
+.layui-table td{
+    padding: 9px 0 9px 15px;
+}
+.layui-table .juzhon{
+    text-align: center;
+    padding: 9px 0 9px 0;
+}
+.jian{
+    cursor: pointer;
+}
+.jia{
+    cursor: pointer;
+}

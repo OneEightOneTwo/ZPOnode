@@ -1,0 +1,46 @@
+html {
+    width: 100%;
+    height: 100%;
+    background: url(../images/ACG.GY_16.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.box {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.layui-form-label{
+    color: #89bbc9 ;
+    width: 43px;
+}
+.box .reg{
+    background: #000614c4;
+    border-radius: 5px;
+    height: 42px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 42px;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  .layui-input-block{
+    margin-left: 74px;
+    min-height: 36px;
+    width: 80%;
+  }
+  .box .line{
+    width: 254px;
+    margin-right: 8px;
+
+
+  }
+  .ma{
+    margin-right: 4px;
+    margin-left: 2px;
+    font-size: 16px;
+
+  }
